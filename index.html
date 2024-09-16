@@ -71,7 +71,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var converter = new showdown.Converter();
 var videoIndex = -1;
-var data = JSON.parse(btoa(window.location.hash.substr(1)));
+var data = JSON.parse(atob(window.location.hash.substr(1)));
 
 var yt_id = data.splice(0,1);
     
