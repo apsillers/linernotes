@@ -107,6 +107,9 @@ function onPlayerStateChange(event) {
   }
 }
 next.onclick = function() {
+  if(videoIndex == -1) {
+    videoIndex = 0;
+  }
   if(data.length - 1 > videoIndex) {
     player.nextVideo()
   }
